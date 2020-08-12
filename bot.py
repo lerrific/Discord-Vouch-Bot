@@ -31,5 +31,4 @@ async def on_ready():  # This event gets fired repeatedly for some reason
     #print('Logged in as {0} and connected to Discord! (ID: {0.id})'.format(bot.user))
     await bot.change_presence(activity=discord.Game(name=utils.prefix + 'help'))
 
-# NjYxMDA0NzgwMzk0NTEyNDA1.XglGrA.aMsMp85SPaHGG9-pBVM-IkklBws
-bot.run('NzM5NzI0MjM2NzU4NzEyMzM1.Xyen4Q.eRLSBQ19bfYNm9ivnAs23LcHOxs')
+bot.run(open(Path("../vouchbottoken.txt")).read())
